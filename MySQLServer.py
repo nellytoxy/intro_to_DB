@@ -15,6 +15,13 @@ try:
 
         """)
         print("Database 'alx_book_store created successfully")
+except Exception as mysql_connector_Error:
+        print("except Exception as mysql_connector_Error")
 
-except Exception as e:
-        print("print error message as", e)
+mycursor.close()
+mydb.close()
+
+
+mycursor.close()
+mydb.close()
+
