@@ -10,12 +10,11 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 
-mycursor.execute ("""CREATE DATABASE IF NOT EXISTS alx_book_store 
-
-""")
-print("Database 'alx_book_store created successfully")
 try:
-     ("""MySQLServer""")
+        mycursor.execute ("""CREATE DATABASE IF NOT EXISTS alx_book_store 
 
-except mysql.connector.errors.ProgrammingError:
-    print("Database already created")
+        """)
+        print("Database 'alx_book_store created successfully")
+
+except Exception as e:
+        print("print error message as", e)
